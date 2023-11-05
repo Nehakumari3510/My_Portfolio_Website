@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #fff;
+            background-color: rgb(43, 4, 80);
+
+        }
+
+        .main {
+            color: hsl(300, 91%, 13%);
+        }
+
+        li {
+            list-style: none;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(35, 56, 124);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            color: paleturquoise;
+            font-size: 1.1rem;
+        }
+
+        img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .right {
+            margin-left: 40%;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-self: space-around;
+            margin: 70px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 10px;
+            background: #552a69;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .rightSection img {
+            width: 500px;
+            height: 500px;
+            margin-top: -50px;
+            margin-left: 200px;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: rgb(174, 36, 194);
+            font-size: 2.5rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #d3b3e2;
+            height: 1.6px;
+            margin: 60px 84px;
+        }
+
+        main h1 {
+            font-size: 32px;
+            margin-left: 80px;
+        }
+
+        .gray {
+            color: rgb(156, 161, 194);
+            margin-left: 80px;
+            font-size: 18px;
+        }
+
+        .secondSection {
+            height: 80vh;
+        }
+
+        .pink {
+            color: rgb(174, 36, 192);
+        }
+
+        .secondSection .box {
+            background: #fff;
+            width: 76vw;
+            height: 1.5px;
+            margin: 56px 0;
+            margin-left: 150px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            background-color: #fff;
+            width: 1px;
+            height: 70px;
+            margin: 0 100px;
+        }
+
+        .rightSection {
+            width: 50%;
+            height: 50%;
+            position: relative;
+            top: 20px;
+            right: -40px;
+           
+        }
+        .port-image {
+            clip-path: circle(50% at 50% 50%);
+            
+        }
+
+        .vertical-title {
+            position: relative;
+            top: -65px;
+            width: 150px;
+            font-size: 16px;
+            left: -10px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: -55px;
+            color: gray;
+            width: 150px;
+            font-size: 11px;
+            left: -10px;
+        }
+
+        footer {
+            background-color: #2b0d38;
+            height: 233px;
+            color: rgb(206, 194, 194);
+        }
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -95px;
+            left: -9px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer-second{
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        .footer-second ul li{
+            padding: 0px;
+            margin: 0px;
+        }
+        .footer-second ul{
+            padding: 5px;
+            justify-content: center;
+            margin-right: 400px;
+        }
+        
+
+        .footer-second ul li a {
+            text-decoration: none;
+            color: #d4d3d3;
+            padding: 4px;
+            font-size: 18px;
+            display: flex;
+        }
+
+        .footer-second ul li a:hover {
+            color: gray;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer-first {
+            margin-top: 20px;
+            color: rgb(148, 31, 163);
+           
+        }
+
+        .footer-rights {
+            justify-content: center;
+            margin-left: 450px;
+        }
+        .icons{
+            width: 25px;
+            display: flex;   
+        }
+        .heading{
+            color: rgb(148, 31, 163);
+            font-size: 23px;
+
+        }
+        .rights{
+            display: flex;
+            top: -10px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Neha's Portfolio</div>
+            <div class="right">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="pink">Neha Kumari</span>
+                , a passionate
+                <div><span id="element"></span></div>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img class="port-image" src="portfolio.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="gray">What I have learned so far</span>
+            <h1>Skills Learned</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="software.png">
+                    <div class="vertical-title">
+                        Basics of Programming (2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        I learned language like C for mking our basics strong in programming and learned basic structure
+                        of programs.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png">
+                    <div class="vertical-title">
+                        C/C++ Development (2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        In this period of time I started learning C and C++ for knowing about what programming is
+                        actually and started building logics in the programming.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="business-software-development.png">
+                    <div class="vertical-title">
+                        DSA/OOPs Concepts (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        In this time period I started knowing about Data Structure and Algorithms principles and tried
+                        to make logics to get better knowledge of DSA. I also learned about OOPs concepts.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="webdevopment.png">
+                    <div class="vertical-title">
+                        Web Development (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I learned languages like HTML, CSS, JavaScript to make our basics strong in frontend web
+                        development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java-logo-1.png">
+                    <div class="vertical-title">
+                        Java development (Present Time)
+                    </div>
+                    <div class="vertical-desc">
+                        In this time I am learning Java development and trying to learn about libraries of Java. I also
+                        trying to know about backend DBMS languages.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Neha's Developer Portfolio</h2>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <div class="heading">Projects</a></div>
+                    <li><a href="">Portfolio<span> Website</span></a></li>
+                    <li><a href="">Netflix <span> Clone </span></a></li>
+                    <li><a href="">Bmi <span> Calcuator </span></a></li>
+                    <li><a href="">Arithmetic <span> calculator </span></a></li>
+                </ul>
+            </div>   
+            <div class="footer-second">
+                <ul>
+                    <div class="heading">Contacts</a></div>
+                    <li><a href="">WhatsApp</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </div>
+            <div style='margin: 25px; font-size: 23px;  color: rgb(148, 31, 163);'>follow me</div>
+            <i  style='color: rgb(15, 141, 15); width: 40px; height: 40px; margin: 30px;' class="fa fa-whatsapp"></i>
+            <i  style='color: rgb(111, 111, 202); width: 40px; height: 40px; margin: 30px;' class="fa fa-facebook"></i>
+            <i  style='color: pink; width: 40px; height: 40px; margin: 20px; margin: 30px;' class="fa fa-instagram"></i>
+            <i  style='color: blue; width: 40px; height: 40px; margin: 20px; margin: 30px;' class="fa fa-linkedin"></i>     
+        </footer>
+        <div class="rights">
+            Copyright 2023: Designed By <span class="designer"> Neha Kumari</span> | All Rights Reserved
+        </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Developer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
